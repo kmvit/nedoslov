@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 from tinymce import models as tinymce_models
+
 # Create your models here.
 
 class Actors(models.Model):
