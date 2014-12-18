@@ -1,0 +1,10 @@
+﻿{% extends 'base.html' %}
+{%block content%}
+	{%for a in actors%}
+	<div class="col-md-3">
+		<p>{{a.name}}</p>
+		<a href="{{a.slug}}"><img src="{{a.portret.url}}" style="width:200px;"></a>
+		
+	</div>
+	{%endfor%}
+{%endblock%}

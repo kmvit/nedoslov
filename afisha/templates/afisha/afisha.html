@@ -1,0 +1,11 @@
+﻿{% extends 'base.html' %}
+{%block content%}
+	{%for a in afisha%}
+	<div class="col-md-3">
+		<p>{{a.name}}</p>
+		<img src="{{a.poster.url}}" style="width:200px;">
+		<p>{{a.data}}</p>
+		<p>Цена:{{a.price}} рублей</p>
+	</div>
+	{%endfor%}
+{%endblock%}
